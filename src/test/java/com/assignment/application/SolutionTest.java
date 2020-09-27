@@ -22,7 +22,7 @@ public class SolutionTest {
 	@Test
 	public void tesWalk()
 	{
-		bird.walk();
+		bird.canWalk();
 	}
 	
 	@Test

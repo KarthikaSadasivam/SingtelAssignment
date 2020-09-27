@@ -3,12 +3,14 @@ package com.assignment.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.assignment.interfaces.Flyable;
+import com.assignment.interfaces.Singable;
 import com.assignment.utils.AnimalCharacters;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements Singable,Flyable {
 	
 	@Override
-	public void walk(){
+	public void canWalk(){
 		System.out.println("I am walking");
 	}
 	
@@ -16,6 +18,7 @@ public class Bird extends Animal {
 		System.out.println("I am flying");
 	}
 	
+	//First Question Answer
 	public void sing(){
 		System.out.println("I am singing");
 	
@@ -59,6 +62,20 @@ public class Bird extends Animal {
 		System.out.println("A parrot living with Duck says:"+AnimalCharacters.doGetSound("duck"));
 		System.out.println("A parrot living near the Phone says: "+AnimalCharacters.doGetSound("phone"));
 		   
+	}
+
+	
+
+	@Override
+	public void canFly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void cannotFly(String animal) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

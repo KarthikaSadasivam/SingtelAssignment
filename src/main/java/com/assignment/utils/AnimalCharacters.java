@@ -18,8 +18,7 @@ public enum AnimalCharacters {
     private final String name;
     private final String species;
     
-    
-
+   
 
 	private AnimalCharacters(String sound,String action,String name,String species) {
 		this.sound = sound;

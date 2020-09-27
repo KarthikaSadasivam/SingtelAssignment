@@ -1,10 +1,18 @@
 package com.assignment.service;
 
-public class Animal {
-	public void walk(){
+import com.assignment.interfaces.Walkable;
+
+public class Animal implements Walkable {
+
+	@Override
+	public void canWalk() {
+		// TODO Auto-generated method stub
 		System.out.println("I can walk");
 	}
-	/*public void sing(){
-		System.out.println("I am singing");
-	}*/
+
+	@Override
+	public void cannotWalk() {
+		// TODO Auto-generated method stub
+		
+	}
 }
